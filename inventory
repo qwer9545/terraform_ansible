@@ -1,0 +1,32 @@
+[k8s_pods]
+alertmanager-prometheus-kube-prometheus-alertmanager-0 ansible_host=10.244.0.57
+grafana-deployment-6cf6665d5c-8c4wp ansible_host=10.111.114.132
+my-mysql-0 ansible_host=10.101.244.126
+mysql-6bc459546b-254rc ansible_host=10.101.244.126
+prometheus-deployment-7d8998f4b6-pm49f ansible_host=10.102.232.167
+prometheus-kube-prometheus-blackbox-exporter-54457f4744-xfsw2 ansible_host=10.108.193.40
+prometheus-kube-prometheus-operator-c4897fd85-f48l8 ansible_host=10.110.34.210
+prometheus-kube-state-metrics-55b547994c-wtrwh ansible_host=10.100.53.231
+prometheus-node-exporter-hqnfw ansible_host=10.106.28.96
+prometheus-prometheus-kube-prometheus-prometheus-0 ansible_host=10.102.232.167
+springboot-app-dbfd67bd6-hlp2z ansible_host=10.111.72.78
+
+[k8s_services]
+alertmanager-operated ansible_host=10.244.0.57
+grafana-service ansible_host=10.111.114.132
+my-mysql ansible_host=10.101.244.126
+mysql-service ansible_host=10.101.244.126
+prometheus-kube-prometheus-alertmanager ansible_host=10.108.165.74
+prometheus-kube-prometheus-blackbox-exporter ansible_host=10.108.193.40
+prometheus-kube-prometheus-operator ansible_host=10.110.34.210
+prometheus-kube-prometheus-prometheus ansible_host=10.102.232.167
+prometheus-kube-state-metrics ansible_host=10.100.53.231
+prometheus-node-exporter ansible_host=10.106.28.96
+prometheus-operated ansible_host=10.244.0.57
+prometheus-service ansible_host=10.103.213.20
+springboot-service ansible_host=10.111.72.78
+
+[defaults]
+inventory = ./inventory
+host_key_checking = False
+deprecation_warnings = False
