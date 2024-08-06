@@ -9,7 +9,9 @@
 ansible-playbook -i ./terraform_ansible/inventory playbook.yml
 
 - 결과 확인
+
 kubectl get pods -n api-base
+..
 kubectl get svc -n api-base
 
 API Repo
